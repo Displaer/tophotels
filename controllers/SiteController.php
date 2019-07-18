@@ -49,7 +49,10 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        // Перенаправляем в другой контроллер
+        $this->redirect(['top/index']);
+        Yii::$app->end();
+        //return $this->render('index');
     }
 
     public function actionLogin()
