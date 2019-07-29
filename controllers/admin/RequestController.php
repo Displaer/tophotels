@@ -1,10 +1,13 @@
 <?php
 
-namespace app\controllers;
+namespace app\controllers\admin;
 
+use app\models\HelperStatus;
 use Yii;
 use app\models\Request;
 use app\models\RequestSearch;
+use yii\filters\AccessControl;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,6 +23,27 @@ class RequestController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => [
+                            'logout',
+                            'index',
+                            'view',
+                            'create',
+                            'update',
+                            'delete',
+                        ],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -64,14 +88,18 @@ class RequestController extends Controller
      */
     public function actionCreate()
     {
+
         $model = new Request();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
+
+        //var_dump(ArrayHelper::map(HelperStatus::find()->all(), 'id','name')); die;
         return $this->render('create', [
             'model' => $model,
+            'statusOptions' => ArrayHelper::map(HelperStatus::find()->all(),'id','name')
         ]);
     }
 
@@ -92,6 +120,8 @@ class RequestController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'statusOptions' => ArrayHelper::map(HelperStatus::findAll('id > 0'),'id','name')
+
         ]);
     }
 
@@ -122,6 +152,6 @@ class RequestController extends Controller
             return $model;
         }
 
-        throw new NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
     }
 }

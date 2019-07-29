@@ -14,6 +14,8 @@ use Yii;
  * @property string $desc
  * @property string $created
  * @property int $status
+ * @property string $direction
+ * @property HelperStatus $status0
  */
 class Request extends \yii\db\ActiveRecord
 {
@@ -32,7 +34,7 @@ class Request extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'phone'], 'required'],
-            [['name', 'phone', 'mail', 'desc', 'created'], 'string'],
+            [['name', 'phone', 'mail', 'desc', 'created', 'direction'], 'string'],
             [['status'], 'integer'],
         ];
     }
@@ -43,13 +45,24 @@ class Request extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'name' => 'Name',
-            'phone' => 'Phone',
-            'mail' => 'Mail',
-            'desc' => 'Desc',
-            'created' => 'Created',
-            'status' => 'Status',
+            'id' => Yii::t('app', 'ID'),
+            'name' => Yii::t('app', 'Name'),
+            'phone' => Yii::t('app', 'Phone'),
+            'mail' => Yii::t('app', 'Mail'),
+            'desc' => Yii::t('app', 'Desc'),
+            'created' => Yii::t('app', 'Created'),
+            'status' => Yii::t('app', 'Status'),
+            'status0' => Yii::t('app', 'Status'),
+            'direction' => Yii::t('app', 'Direction'),
         ];
+    }
+
+
+    /**
+     * @return array
+     */
+    public function getStatus0()
+    {
+        return $this->hasOne(HelperStatus::class, ['id' => 'status']);
     }
 }

@@ -4583,15 +4583,10 @@ use yii\widgets\ActiveForm;
         </div>
         <div class="panel" id="formPanel">
 
-            <?php $form = ActiveForm::begin([
+            <?php /*$form = ActiveForm::begin([
                 'id'=>'request-form',
-                'options' => ['class' => 'form-horizontal'],
-                'fieldConfig' => [
-                    'template'=> "<div class=\"tour-selection-field tour-selection-field--30p\">\n<div class=\"js-add-error bth__inp-block  \">\n {input} \n {label} \n <div class=\"hint-block hint-block--abs\"> \n <i class=\"fa fa-question-circle question-error\" aria-hidden=\"true\"></i> \n <div class=\"hint\"> \n <p class=\"bth__cnt\">{error}</p> \n </div>  \n </div> \n </div> \n </div>",
-                    'labelOptions' => ['class' => 'bth__inp-lbl'],
-                    'inputOptions' => ['class' => 'bth__inp js-label'],
-                ],
-            ]); ?>
+                'fieldConfig' => [],
+            ]); */?>
             <div class="bth__cnt uppercase">Пожалуйста, укажите параметры вашей поездки</div>
 
 
@@ -4604,11 +4599,11 @@ use yii\widgets\ActiveForm;
 
                         <?=Html::activeTextarea($model,'desc',[
                             'class' => 'bth__inp  bold js-stop-label',
-                            'id' => 'parametrs',
+                            'id' => 'desc',
                             'type' => 'text',
                         ])  ?>
                         <!--<textarea type="text" class="bth__inp  bold js-stop-label" id="parametrs"></textarea>-->
-                        <label for="parametrs" class="bth__inp-lbl">
+                        <label for="desc" class="bth__inp-lbl">
                             <span class="block  mb5">- укажите страну, курорт или отель</span>
                             <span class="block  mb5">- количество человек</span>
                             <span class="block  mb5">- ваши предпочтения по отелю</span>
@@ -4621,16 +4616,11 @@ use yii\widgets\ActiveForm;
 
                 <div class="tour-selection-wrap-in tour-selection-wrap-flex">
 
-                    <?=$form->field($model, 'name')->textInput() ?>
-                    <?=$form->field($model, 'phone')->textInput() ?>
-                    <?/*=$form->field($model, 'mail')->textInput() */?>
-
-<!--
                     <div class="tour-selection-field tour-selection-field--30p">
                         <div class="js-add-error bth__inp-block ">
-                            <input type="text" class="bth__inp js-label" id="name1">
+                            <input type="text" class="bth__inp js-label" id="name">
 
-                            <label for="name1" class="bth__inp-lbl">Ваше имя</label>
+                            <label for="name" class="bth__inp-lbl">Ваше имя</label>
                             <div class="hint-block hint-block--abs">
                                 <i class="fa fa-question-circle question-error" aria-hidden="true"></i>
                                 <div class="hint">
@@ -4643,8 +4633,8 @@ use yii\widgets\ActiveForm;
                     <div class="tour-selection-field tour-selection-field--30p">
 
                         <div class="js-add-error bth__inp-block ">
-                            <input type="text" class="bth__inp js-label" id="phone1" placeholder="">
-                            <label for="phone1" class="bth__inp-lbl">Телефон</label>
+                            <input type="text" class="bth__inp js-label" id="phone" placeholder="">
+                            <label for="phone" class="bth__inp-lbl">Телефон</label>
                             <div class="hint-block hint-block--abs">
                                 <i class="fa fa-question-circle question-error" aria-hidden="true"></i>
                                 <div class="hint">
@@ -4653,37 +4643,31 @@ use yii\widgets\ActiveForm;
                             </div>
                         </div>
                     </div>
--->
 
                     <div class="tour-selection-field tour-selection-field--30p">
-                        <div class="bth__inp-block  ">
-                            <?=Html::activeTextInput($model,'mail', [
-                                'class' => 'bth__inp js-label',
-                                'id' => 'mail3'
-                            ])?>
-                            <!--<input type="text" class="bth__inp js-label " id="mail3">-->
-                            <label for="mail3" class="bth__inp-lbl">Email (не обязательно)</label>
 
+                        <div class="js-add-error bth__inp-block ">
+                            <input type="text" class="bth__inp js-label" id="mail" placeholder="">
+                            <label for="mail" class="bth__inp-lbl">Email (не обязательно)</label>
+                            <div class="hint-block hint-block--abs">
+                                <i class="fa fa-question-circle question-error" aria-hidden="true"></i>
+                                <div class="hint">
+                                    <p class="bth__cnt">Некорректный Email</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="tour-selection-wrap-in">
-
-                    <?= Html::submitButton('Отправить заявку*<div class=" bth__loader-spin"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>',
-                        [
-                            'class' => 'bth__btn  bth__btn--fill bth__loader'
-                        ]) ?>
-
-                    <!--<div class="bth__btn  bth__btn--fill bth__loader">
+                    <div id="sendButton" class="bth__btn  bth__btn--fill bth__loader">
                         Отправить заявку*
                         <div class=" bth__loader-spin">
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                         </div>
-                    </div>-->
+                    </div>
 
                     <div class="tour-selection-wrap__abs-txt  bth__cnt bth__cnt--sm">
                         *Нажимая на кнопку "отправить", я принимаю
@@ -4694,9 +4678,9 @@ use yii\widgets\ActiveForm;
 
                 </div>
             </div>
+            <?php /*ActiveForm::end(); */?>
 
-
-            <?php ActiveForm::end(); ?>
+            <div id="message" class="bth__cnt fz18 bold">Спасибо, Ваша заявка отправлена и будет обработана в ближайшее время.</div>
         </div>
         <div class="panel" id="formStep2Panel" style="display: none">
             <div class="bth__cnt fz18 bold">Спасибо, Ваша заявка отправлена и будет обработана в ближайшее время.</div>
@@ -4807,14 +4791,15 @@ use yii\widgets\ActiveForm;
                 </div>
 
                 <div class="tour-selection-wrap-in ">
-                    <a href="help-selection#metro-valid-pp" class="metro-valid-pp bth__btn  bth__btn--fill bth__loader">
+                    <!--href="help-selection#metro-valid-pp"-->
+                    <button class="metro-valid-pp bth__btn bth__btn--fill bth__loader">
                         Отправить запрос*
-                        <div class=" bth__loader-spin">
+                        <div class="bth__loader-spin">
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                         </div>
-                    </a>
+                    </button>
                     <div class="tour-selection-wrap__abs-txt  bth__cnt bth__cnt--sm">
                         *Нажимая на кнопку "отправить", я принимаю
                         <a href="help-selection#p-agreement-pp" class="p-agreement-pp agree">
@@ -4828,6 +4813,5 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 </div>
-
-
-<? $this->render("sidepart",['model' => $model]); ?>
+<?=$this->render("sidepart",['model' => $model]); ?>
+<?php $this->registerJsFile("@web/js/top.js"); ?>

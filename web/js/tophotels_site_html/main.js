@@ -1,13 +1,14 @@
 jQuery(document).ready(function () {
 
-    $('.bth__loader').on('click', function () {
+    /*$('.bth__loader').on('click', function () {
         $(this).addClass('bth__loader--animate');
     });
     $('button, .bth__btn').on('click', function () {
         $('.js-add-error').addClass('has-error');
-        $('.bth__inp-block-eye').hide();
-    });
-//Подсказки для полей
+        $('.bth__inp-block-eye').hide(); // Элемент не найден
+    });*/
+
+    //Подсказки для полей
     $('.bth__inp.js-stop-label').on('focus', function () {
         $(this).addClass('focus');
         $(this).next('.bth__inp-lbl').hide();
@@ -18,7 +19,6 @@ jQuery(document).ready(function () {
         if ($(this).val().trim() !== '') {
             $(this).next('.bth__inp-lbl').hide();
         } else {
-
             $(this).next('.bth__inp-lbl').show();
         }
     });

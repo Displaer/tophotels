@@ -5,10 +5,12 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Request */
 
-$this->title = 'Update Request: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Requests', 'url' => ['index']];
+$this->title = Yii::t('app', 'Update Request: {name}', [
+    'name' => $model->name,
+]);
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Requests'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
 <div class="request-update">
 
@@ -16,6 +18,7 @@ $this->params['breadcrumbs'][] = 'Update';
 
     <?= $this->render('_form', [
         'model' => $model,
+        'statusOptions' => $statusOptions,
     ]) ?>
 
 </div>

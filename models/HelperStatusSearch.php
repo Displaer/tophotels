@@ -4,12 +4,12 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Request;
+use app\models\HelperStatus;
 
 /**
- * RequestSearch represents the model behind the search form of `app\models\Request`.
+ * HelperStatusSearch represents the model behind the search form of `app\models\HelperStatus`.
  */
-class RequestSearch extends Request
+class HelperStatusSearch extends HelperStatus
 {
     /**
      * {@inheritdoc}
@@ -17,8 +17,8 @@ class RequestSearch extends Request
     public function rules()
     {
         return [
-            [['id', 'status'], 'integer'],
-            [['name', 'phone', 'mail', 'desc', 'created', 'direction'], 'safe'],
+            [['id'], 'integer'],
+            [['skey', 'name'], 'safe'],
         ];
     }
 
@@ -40,15 +40,12 @@ class RequestSearch extends Request
      */
     public function search($params)
     {
-        $query = Request::find();
+        $query = HelperStatus::find();
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'pagination' => [
-                'pageSize' => 10,
-            ],
         ]);
 
         $this->load($params);
@@ -62,15 +59,10 @@ class RequestSearch extends Request
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'status' => $this->status,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'phone', $this->phone])
-            ->andFilterWhere(['like', 'mail', $this->mail])
-            ->andFilterWhere(['like', 'desc', $this->desc])
-            ->andFilterWhere(['like', 'created', $this->created])
-            ->andFilterWhere(['like', 'direction', $this->direction]);
+        $query->andFilterWhere(['like', 'skey', $this->skey])
+            ->andFilterWhere(['like', 'name', $this->name]);
 
         return $dataProvider;
     }
