@@ -8,8 +8,9 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-
-AppAsset::register($this);
+use app\assets\TopAsset;
+/*AppAsset::register($this);*/
+TopAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -22,8 +23,9 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
 
+    <base href="<?=Yii::$app->homeUrl;?>"/>
     <link rel="icon" href="i/favicon.png">
-    <link href="css/_lsfw/reset-ls.css" rel="stylesheet">
+    <!--<link href="css/_lsfw/reset-ls.css" rel="stylesheet">
     <link href="css/_lsfw/atom.css" rel="stylesheet">
     <link href="css/_lsfw/fonts.css" rel="stylesheet">
     <link href="css/_lsfw/tabs.css" rel="stylesheet">
@@ -48,7 +50,7 @@ AppAsset::register($this);
     <link href="css/tophotels_site_html/agree-pp.css" rel="stylesheet">
     <link href="css/tophotels_site_html/tabs-bar-mobile.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
-    <script src="js/jquery.311.min.js"></script>
+    --><!--<script src="js/jquery.311.min.js"></script>-->
 
 
 
@@ -61,14 +63,14 @@ AppAsset::register($this);
     <div class="headerMobile">
 
         <div class="headerMobile__flex js-serach-active-hide">
-            <a href="http://html2.tophotels.site/tophotels/" class="headerMobile__logo">
+            <a href="http://sanginov93.tophotels.site/project1/web/" class="headerMobile__logo">
                 <img src="i/th-logo.png" width="112" height="40" class="mr10">
             </a>
 
             <div class="headerMobile__right">
                 <div class="headerMobile__right-auth">
                     <i class="far fa-envelope"></i>
-                    <a href="help-selection#" class="headerMobile__msg-icon "><span>989</span></a>
+                    <a href="#" class="headerMobile__msg-icon "><span>989</span></a>
                 </div>
 
                 <div class="headerMobile__right-noAuth" style="display: none">
@@ -81,7 +83,7 @@ AppAsset::register($this);
                 <div class="headerMobile__bth headerMobile__bth--auth mr10" style="display: none">
                     <div class="headerMobile__key"></div>
                 </div>
-                <a href="help-selection#" class="headerMobile__user js-show-key-block">
+                <a href="#" class="headerMobile__user js-show-key-block">
                     <img src="i/user-ava-cat.jpg">
                 </a>
                 <div class="headerMobile__bth mr5">
@@ -186,8 +188,6 @@ AppAsset::register($this);
                             </label>
                         </div>
                     </div>
-
-
                     <div class="headerMobile__registration-line headerMobile__registration-line--border">
                         <div class="bth__inp-block">
                             <input type="text" class="bth__inp  js-input-label" id="regEmailOsn">
@@ -217,8 +217,8 @@ AppAsset::register($this);
                     <div class="relative">
                         <button class="bth__btn bth__btn--fill jsRegStep2 ">Продолжить*</button>
                         <div class="headerMobile__registration-text-abs">
-                            <p class="bth__cnt bth__cnt--sm">*Нажимая на кнопку "продолжить", я принимаю <a href="help-selection#">Соглашение
-                                    об обработке личных данных</a> и <a href="help-selection#">Правила
+                            <p class="bth__cnt bth__cnt--sm">*Нажимая на кнопку "продолжить", я принимаю <a href="#">Соглашение
+                                    об обработке личных данных</a> и <a href="#">Правила
                                     сайта</a></p>
                         </div>
                     </div>
@@ -237,7 +237,7 @@ AppAsset::register($this);
     <header class="header">
 
         <div class="header-cnt header-cnt_index ">
-            <a href="http://html2.tophotels.site/tophotels/" class="header-logo">
+            <a href="http://sanginov93.tophotels.site/project1/web/" class="header-logo">
                 <img src="i/th-logo.png" alt="">
             </a>
             <div class="header-nav">
@@ -245,20 +245,20 @@ AppAsset::register($this);
                     <ul class="header-nav-list hide-1023">
 
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/profile" class="header-nav-link grey ">Мой профиль</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/profile" class="header-nav-link grey ">Мой профиль</a>
                         </li>
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/hotels-catalog" class="header-nav-link grey">Отели</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/hotels-catalog" class="header-nav-link grey">Отели</a>
                         </li>
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/forum" class="header-nav-link grey">Клуб ТопХотелс</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/forum" class="header-nav-link grey">Клуб ТопХотелс</a>
                         </li>
                         <li class="header-nav-item active">
                             <a href="top/index" class="header-nav-link ">Помощь в подборе</a>
                         </li>
 
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/review" class="header-nav-link  grey">Добавить отзыв</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/review" class="header-nav-link  grey">Добавить отзыв</a>
                         </li>
 
 
@@ -267,25 +267,25 @@ AppAsset::register($this);
 
 
                         <li class="header-nav-item">
-                            <a href="http://html2.tophotels.site/tophotels/profile" class="header-nav-link ">Мой профиль</a>
+                            <a href="http://sanginov93.tophotels.site/project1/web/profile" class="header-nav-link ">Мой профиль</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="http://html2.tophotels.site/tophotels/hotels-catalog" class="header-nav-link ">Отели</a>
+                            <a href="http://sanginov93.tophotels.site/project1/web/hotels-catalog" class="header-nav-link ">Отели</a>
                         </li>
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/forum" class="header-nav-link ">Клуб ТопХотелс</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/forum" class="header-nav-link ">Клуб ТопХотелс</a>
                         </li>
                         <li class="header-nav-item">
                             <a href="top/index" class="header-nav-link ">Помощь в подборе</a>
                         </li>
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/review" class="header-nav-link ">Добавить отзыв</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/review" class="header-nav-link ">Добавить отзыв</a>
                         </li>
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/hotel-description" class="header-nav-link ">Отель</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/hotel-description" class="header-nav-link ">Отель</a>
                         </li>
                         <li class="header-nav-item">
-                            <a _href="http://html2.tophotels.site/tophotels/cutaway" class="header-nav-link ">Турист</a>
+                            <a _href="http://sanginov93.tophotels.site/project1/web/cutaway" class="header-nav-link ">Турист</a>
                         </li>
 
 
@@ -312,7 +312,7 @@ AppAsset::register($this);
 
 
             <div class="header-profile auth " style="display:none;">
-                <a href="help-selection#"><img class="header-profile-img" src="i/user-ava-cat.jpg" alt=""></a>
+                <a href="#"><img class="header-profile-img" src="i/user-ava-cat.jpg" alt=""></a>
                 <span class="header-profile__msgs">
                 <span>989</span>
             </span>
@@ -320,36 +320,36 @@ AppAsset::register($this);
                 <div class="header-profile__dropdown" style="display:none;">
                     <div class="header-profile__item">
                         <div  class="header-profile__link">
-                            <a href="help-selection#" class="header-profile__user-name">Юрковская Александра</a>
+                            <a href="#" class="header-profile__user-name">Юрковская Александра</a>
                             <div class="bth__cnt fz13 mt5">Турист</div>
                         </div>
                     </div>
 
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link">Мой профиль</a>
+                        <a href="#" class="header-profile__link">Мой профиль</a>
                     </div>
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link">Мои интересы</a>
+                        <a href="#" class="header-profile__link">Мои интересы</a>
                     </div>
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link">Мои действия</a>
+                        <a href="#" class="header-profile__link">Мои действия</a>
                     </div>
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link">Мои друзья</a>
+                        <a href="#" class="header-profile__link">Мои друзья</a>
                     </div>
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link">Избранные отели</a>
+                        <a href="#" class="header-profile__link">Избранные отели</a>
                     </div>
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link">Уведомления</a>
+                        <a href="#" class="header-profile__link">Уведомления</a>
                     </div>
                     <div class="header-profile__item">
-                        <a href="help-selection#" class="header-profile__link red">Выйти</a>
+                        <a href="#" class="header-profile__link red">Выйти</a>
                     </div>
                 </div>
             </div>
 
-            <a href="help-selection#auth-pp" class="header-bot__key js-show-auth auth-pp"></a>
+            <a href="#auth-pp" class="header-bot__key js-show-auth auth-pp"></a>
 
             <div class="header-lang">
                 <div class="lang-block js-lang-open">
@@ -368,23 +368,13 @@ AppAsset::register($this);
 
     </header>
 
-
-
-
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-    </div>
-
-
+    <?= $content ?>
     <footer class="footer footer2018">
 
         <div class="footer__line footer__line--bot">
             <div class="footer__copyright">
                 <p class="footer__cnt bold  copyright">© TopHotels 2003-<?=date('Y')?></p>
-                <a href="help-selection#legal-information-pp" class="legal-information-pp footer__cnt-link legal ">правовая информация</a>
+                <a href="#legal-information-pp" class="legal-information-pp footer__cnt-link legal ">правовая информация</a>
             </div>
 
             <div class="footer__cnt-wrap">
@@ -396,9 +386,7 @@ AppAsset::register($this);
 
 </div>
 
-
-
-<script src="js/jquery-ui.min.js"></script>
+<!--<script src="js/jquery-ui.min.js"></script>
 <script src="js/vendor/magnific-popup.min.js"></script>
 <script src="js/vendor/SumoSelectLS/js/jquery.sumoselect-ls.min.js"></script>
 <script src="js/vendor/jquery-datepicker-range.js"></script>
@@ -413,7 +401,6 @@ AppAsset::register($this);
 <script src="js/tophotels_site_html/header-mobile.js"></script>
 <script src="js/tophotels_site_html/left-menu-mobile.js"></script>
 <script src="js/tophotels_site_html/legal-info-pp.js"></script>
-<!--<script src="assets/8f9331f6/yii.js"></script>-->
 <script src="js/libs/array-function.js"></script>
 <script src="js/libs/date-function.js"></script>
 <script src="js/libs/number-function.js"></script>
@@ -422,7 +409,7 @@ AppAsset::register($this);
 <script src="js/libs/reverseLocale.js"></script>
 <script src="js/libs/LSPager.js"></script>
 <script src="js/libs/LSSuggest.js"></script>
-
+-->
 <?php $this->endBody() ?>
 </body>
 </html>

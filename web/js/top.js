@@ -5,6 +5,39 @@
 /* 'use strict'; */
  $(function(){
 var $simpleForm = {
+    emailValidate:function(mail){
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(mail).toLowerCase());
+    },
+    rebindErrorEscape:function () {
+
+        $("#formPanel #name,#formPanel #phone,#formPanel #mail").bind("keyup", function (e) {
+            var id = $(this).attr('id');
+
+            switch (id){
+                case "name":
+                case "phone":{
+                    if($(this).val() == '') {
+                        if(!$(this).parent().hasClass('has-error'))
+                            $(this).parent().addClass('has-error');
+                    } else {
+                        if($(this).parent().hasClass('has-error'))
+                            $(this).parent().removeClass('has-error');
+                    }
+                }break;
+                case "mail":{
+                    if($(this).val() !='' && !$simpleForm.emailValidate($(this).val())) {
+                        if(!$(this).parent().hasClass('has-error'))
+                            $(this).parent().addClass('has-error');
+                    } else {
+                        if($(this).parent().hasClass('has-error'))
+                            $(this).parent().removeClass('has-error');
+                    }
+                }
+            }
+        });
+
+    },
     rebindSendButton:function () {
         $("#formPanel #sendButton").bind("click", function () {
 
@@ -34,7 +67,7 @@ var $simpleForm = {
 
             // Телефон
             if(reqData.mail != '') {
-                if( /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(reqData.mail)){
+                if($simpleForm.emailValidate(reqData.mail)){
                     $("#formPanel #mail").parent().removeClass('has-error');
                 } else {
                     $("#formPanel #mail").parent().addClass('has-error');
@@ -54,7 +87,7 @@ var $simpleForm = {
                 $.ajax({
                     dataType:"JSON",
                     method: "POST",
-                    url: "index.php?r=top/send",
+                    url: "top/send",
                     data: data,
                     success:function (data) {
                         $("#formPanel #sendButton").removeClass('bth__loader--animate');
@@ -95,6 +128,21 @@ var $simpleForm = {
     init:function () {
         $("#formPanel div#message").hide();
         $simpleForm.rebindSendButton();
+        $simpleForm.rebindErrorEscape();
+
+        $("#formPanel input#phone").bind("keypress", function (e) {
+
+            var enabled = [0,8,32,40,41,43,45,48,49,50,51,52,53,54,55,56,57];
+            var key = e.keyCode || e.which; // get key
+            //console.log(key);
+            /*if (key != 8 && key != 0 && (key < 48 || key > 57)) {*/
+            if (enabled.indexOf(key) ==-1) {
+                //display error message
+                // $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+            
+        });
 
     }
 };

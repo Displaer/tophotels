@@ -128,10 +128,14 @@ $(document).ready(function () {
     };
 
 
-    if (!window.location.hash)
-        $('.tab.active').first().click();
-    else
-        $(window.location.hash).click();
+
+    if (!window.location.hash){
+        //console.log($('.tab.active#form').first());
+        $('.tab.active#form').click();
+    } else {
+        //$(window.location.hash).click();
+    }
+
 
     $(window).bind('hashchange', function () {
         $(window.location.hash).click();

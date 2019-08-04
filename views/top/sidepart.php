@@ -56,65 +56,65 @@
 
                                 <ul class="side-nav-li__tabs-list">
                                     <li class="side-nav-li__tabs-li">
-                                        <a href="http://html2.tophotels.site/tophotels/profile-cutaway#authorization">Визитка</a>
+                                        <a href="http://sanginov93.tophotels.site/project1/web/profile-cutaway#authorization">Визитка</a>
                                     </li>
 
                                     <li class="side-nav-li__tabs-li">
-                                        <a href="http://html2.tophotels.site/tophotels/profile-cutaway#hotels"> Подборки и предложения</a>
+                                        <a href="http://sanginov93.tophotels.site/project1/web/profile-cutaway#hotels"> Подборки и предложения</a>
                                     </li>
                                     <li class="side-nav-li__tabs-li">
-                                        <a href="http://html2.tophotels.site/tophotels/profile-cutaway#recomend"> Меня рекомендуют</a>
+                                        <a href="http://sanginov93.tophotels.site/project1/web/profile-cutaway#recomend"> Меня рекомендуют</a>
                                     </li>
                                     <li class="side-nav-li__tabs-li">
-                                        <a href="http://html2.tophotels.site/tophotels/profile-cutaway#sertificate">Сертификаты</a>
+                                        <a href="http://sanginov93.tophotels.site/project1/web/profile-cutaway#sertificate">Сертификаты</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/profile" class="side-nav-li-a">Профиль</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/profile" class="side-nav-li-a">Профиль</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/tape-my-actions" class="side-nav-li-a ">Лента моих действий</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/tape-my-actions" class="side-nav-li-a ">Лента моих действий</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/my-travels" class="side-nav-li-a ">Мои путешествия</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/my-travels" class="side-nav-li-a ">Мои путешествия</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/my-progress" class="side-nav-li-a ">Достижения</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/my-progress" class="side-nav-li-a ">Достижения</a>
 
                             </li>
                         </ul>
                         <ul class="side-nav-ul">
                             <li class="side-nav-li side-nav-li-ttl">Коммуникации</li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/log-all-messages" class="side-nav-li-a">Лог всех сообщений</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/log-all-messages" class="side-nav-li-a">Лог всех сообщений</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/my-subscription-hotels" class="side-nav-li-a ">Мои подписки на отели</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/my-subscription-hotels" class="side-nav-li-a ">Мои подписки на отели</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/tape-communication" class="side-nav-li-a ">Лента общения</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/tape-communication" class="side-nav-li-a ">Лента общения</a>
 
                             </li>
                         </ul>
                         <ul class="side-nav-ul">
                             <li class="side-nav-li side-nav-li-ttl">Настройка интересов</li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/personal-data" class="side-nav-li-a ">Персональные данные</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/personal-data" class="side-nav-li-a ">Персональные данные</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/my-preference" class="side-nav-li-a">Мои предпочтения</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/my-preference" class="side-nav-li-a">Мои предпочтения</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/my-connections" class="side-nav-li-a ">Мои контакты</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/my-connections" class="side-nav-li-a ">Мои контакты</a>
 
                             </li>
                         </ul>
@@ -129,21 +129,21 @@
 
                         <ul class="side-nav-ul">
                             <li class="side-nav-li pt10">
-                                <a href="http://html2.tophotels.site/tophotels/hotels-catalog#hotelFilter" class="side-nav-li-a  side-nav-li-a--del-arr ">Фильтр</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/hotels-catalog#hotelFilter" class="side-nav-li-a  side-nav-li-a--del-arr ">Фильтр</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/hotels-catalog#hotelSearch" class="side-nav-li-a  side-nav-li-a--del-arr ">
+                                <a href="http://sanginov93.tophotels.site/project1/web/hotels-catalog#hotelSearch" class="side-nav-li-a  side-nav-li-a--del-arr ">
                                     Поиск отеля</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/hotels-catalog#myInterests" class="side-nav-li-a   side-nav-li-a--del-arr">
+                                <a href="http://sanginov93.tophotels.site/project1/web/hotels-catalog#myInterests" class="side-nav-li-a   side-nav-li-a--del-arr">
                                     Мои интересы</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/hotels-catalog#hotelChains" class="side-nav-li-a   side-nav-li-a--del-arr">
+                                <a href="http://sanginov93.tophotels.site/project1/web/hotels-catalog#hotelChains" class="side-nav-li-a   side-nav-li-a--del-arr">
                                     Сети отелей</a>
 
                             </li>
@@ -165,15 +165,15 @@
                                 <a href="help-selection#" class="side-nav-li-a grey">Лента клуба</a>
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/forum" class="side-nav-li-a">Форум по отелям </a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/forum" class="side-nav-li-a">Форум по отелям </a>
 
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/hotline" class="side-nav-li-a ">Спецакции отелей</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/hotline" class="side-nav-li-a ">Спецакции отелей</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/club-vote" class="side-nav-li-a ">Опросы</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/club-vote" class="side-nav-li-a ">Опросы</a>
 
                             </li>
                             <li class="side-nav-li">
@@ -184,29 +184,29 @@
                         <ul class="side-nav-ul">
                             <li class="side-nav-li side-nav-li-ttl">Рейтинги</li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/ratings-nominations" class="side-nav-li-a ">Номинации отелей</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/ratings-nominations" class="side-nav-li-a ">Номинации отелей</a>
 
                             </li>
                             <li class="side-nav-li ">
                                 <a href="help-selection#" class="side-nav-li-a ">Рейтинг номеров</a>
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/top-users" class="side-nav-li-a ">ТОП участников </a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/top-users" class="side-nav-li-a ">ТОП участников </a>
 
                             </li>
                         </ul>
                         <ul class="side-nav-ul">
                             <li class="side-nav-li side-nav-li-ttl">Участники</li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/who-where-when" class="side-nav-li-a ">Кто Где Когда</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/who-where-when" class="side-nav-li-a ">Кто Где Когда</a>
 
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/club-traveler-list" class="side-nav-li-a ">Путешественники</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/club-traveler-list" class="side-nav-li-a ">Путешественники</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/club-touragent-list" class="side-nav-li-a ">ПРО Турагенты</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/club-touragent-list" class="side-nav-li-a ">ПРО Турагенты</a>
 
                             </li>
                             <li class="side-nav-li">
@@ -218,7 +218,7 @@
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/hotels-communities" class="side-nav-li-a ">Сообщества отелей</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/hotels-communities" class="side-nav-li-a ">Сообщества отелей</a>
 
                             </li>
                         </ul>
@@ -235,17 +235,17 @@
 
                         <ul class="side-nav-ul">
                             <li class="side-nav-li pt10">
-                                <a href="http://html2.tophotels.site/tophotels/help-selection#step1" class="side-nav-li-a  side-nav-li-a--del-arr ">Параметры
+                                <a href="http://sanginov93.tophotels.site/project1/web/help-selection#step1" class="side-nav-li-a  side-nav-li-a--del-arr ">Параметры
                                     тура</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/help-selection#form" class="side-nav-li-a  side-nav-li-a--del-arr"> Простая
+                                <a href="http://sanginov93.tophotels.site/project1/web/help-selection#form" class="side-nav-li-a  side-nav-li-a--del-arr"> Простая
                                     форма</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/help-selection#formStep2" class="side-nav-li-a  side-nav-li-a--del-arr ">Рега</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/help-selection#formStep2" class="side-nav-li-a  side-nav-li-a--del-arr ">Рега</a>
 
                             </li>
 
@@ -261,18 +261,18 @@
 
                         <ul class="side-nav-ul">
                             <li class="side-nav-li pt10">
-                                <a href="http://html2.tophotels.site/tophotels/review#search" class="side-nav-li-a   side-nav-li-a--del-arr">Добавление
+                                <a href="http://sanginov93.tophotels.site/project1/web/review#search" class="side-nav-li-a   side-nav-li-a--del-arr">Добавление
                                     отзыва</a>
 
                             </li>
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/review#older" class="side-nav-li-a  side-nav-li-a--del-arr">Черновики
+                                <a href="http://sanginov93.tophotels.site/project1/web/review#older" class="side-nav-li-a  side-nav-li-a--del-arr">Черновики
                                     (14)</a>
 
                             </li>
 
                             <li class="side-nav-li">
-                                <a href="http://html2.tophotels.site/tophotels/review#no-hotel" class="side-nav-li-a  side-nav-li-a--del-arr">Нет отеля на
+                                <a href="http://sanginov93.tophotels.site/project1/web/review#no-hotel" class="side-nav-li-a  side-nav-li-a--del-arr">Нет отеля на
                                     ТопХотелс</a>
 
                             </li>
@@ -307,19 +307,19 @@
                             <li class="side-nav-li side-nav-li-ttl">Для бизнеса</li>
 
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/api-services" class="side-nav-li-a ">API сервисы</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/api-services" class="side-nav-li-a ">API сервисы</a>
 
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/promotion-hotel" class="side-nav-li-a ">Продвижение отеля</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/promotion-hotel" class="side-nav-li-a ">Продвижение отеля</a>
 
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/touragent-profile" class="side-nav-li-a ">Профиль турагента</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/touragent-profile" class="side-nav-li-a ">Профиль турагента</a>
 
                             </li>
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/media-ad" class="side-nav-li-a ">Медийная реклама</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/media-ad" class="side-nav-li-a ">Медийная реклама</a>
 
                             </li>
 
@@ -328,22 +328,22 @@
                             <li class="side-nav-li side-nav-li-ttl">Информация</li>
 
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/about-project" class="side-nav-li-a ">О проекте</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/about-project" class="side-nav-li-a ">О проекте</a>
 
                             </li>
 
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/terms-use" class="side-nav-li-a ">Правила пользования</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/terms-use" class="side-nav-li-a ">Правила пользования</a>
 
                             </li>
 
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/job-and-career" class="side-nav-li-a ">Работа и карьера </a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/job-and-career" class="side-nav-li-a ">Работа и карьера </a>
 
                             </li>
 
                             <li class="side-nav-li ">
-                                <a href="http://html2.tophotels.site/tophotels/feedback" class="side-nav-li-a">Обратная связь</a>
+                                <a href="http://sanginov93.tophotels.site/project1/web/feedback" class="side-nav-li-a">Обратная связь</a>
 
                             </li>
 
