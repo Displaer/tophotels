@@ -4633,7 +4633,7 @@ use yii\widgets\ActiveForm;
                     <div class="tour-selection-field tour-selection-field--30p">
 
                         <div class="js-add-error bth__inp-block ">
-                            <input type="text" class="bth__inp js-label" id="phone" placeholder="" maxlength="16">
+                            <input type="text" class="bth__inp js-label" id="phone" placeholder="" maxlength="19">
                             <label for="phone" class="bth__inp-lbl">Телефон</label>
                             <div class="hint-block hint-block--abs">
                                 <i class="fa fa-question-circle question-error" aria-hidden="true"></i>
