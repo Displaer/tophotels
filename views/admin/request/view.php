@@ -35,7 +35,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'mail:ntext',
             'desc:ntext',
             'created:ntext',
-            ['attribute'=>'status', 'value'=>function($model){ return $model->status0->name;}],
             'direction:ntext',
         ],
     ]) ?>

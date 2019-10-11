@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+/* @var $this yii\web\View */
+/* @var $model app\models\Request */
+?><!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -50,10 +53,10 @@
                             </tr>
 
                             <tr>
-                                <td style="font: 16px Arial, sans-serif;line-height: 20px;padding: 0 30px 10px;">Вы получили новую заявку на подбор тура от пользователя - <a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/#id#" target="_blank" style="-webkit-text-size-adjust:none;font: 16px Arial, sans-serif;line-height: 20px;color: #318cc6;text-decoration: none;">№ #id#</a>. Рекомендуем Вам скорее ее обработать и связаться с туристом.</td>
+                                <td style="font: 16px Arial, sans-serif;line-height: 20px;padding: 0 30px 10px;">Вы получили новую заявку на подбор тура от пользователя - <a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/<?=$model->id;?>" target="_blank" style="-webkit-text-size-adjust:none;font: 16px Arial, sans-serif;line-height: 20px;color: #318cc6;text-decoration: none;">№ <?=$model->id;?></a>. Рекомендуем Вам скорее ее обработать и связаться с туристом.</td>
                             </tr>
                             <tr>
-                                <td style="padding-bottom: 20px;padding-top: 20px"><a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/#id#" style="-webkit-text-size-adjust:none;font: 16px Arial, sans-serif;line-height: 20px;display: block;width: 230px;text-align: center;text-transform: uppercase;text-decoration: none;font-weight: bold;color: #ffffff;background-color: #00a551;margin: 0 auto;padding: 14px 0;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;">Просмотреть заявку</a></td>
+                                <td style="padding-bottom: 20px;padding-top: 20px"><a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/<?=$model->id;?>" style="-webkit-text-size-adjust:none;font: 16px Arial, sans-serif;line-height: 20px;display: block;width: 230px;text-align: center;text-transform: uppercase;text-decoration: none;font-weight: bold;color: #ffffff;background-color: #00a551;margin: 0 auto;padding: 14px 0;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;">Просмотреть заявку</a></td>
                             </tr>
                             </tbody>
                         </table>
@@ -71,11 +74,11 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="font: 15px Arial, sans-serif;line-height: 20px;padding: 0 15px 5px;">Ваш клиент: <a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/#id#" target="_blank" style="-webkit-text-size-adjust:none;font: 15px Arial, sans-serif;line-height: 20px;color: #318cc6;text-decoration: none;">#name#</a></td>
+                                            <td style="font: 15px Arial, sans-serif;line-height: 20px;padding: 0 15px 5px;">Ваш клиент: <a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/<?=$model->id;?>" target="_blank" style="-webkit-text-size-adjust:none;font: 15px Arial, sans-serif;line-height: 20px;color: #318cc6;text-decoration: none;"><?=$model->name;?></a></td>
                                         </tr>
                                         <tr>
                                             <td style="font: 15px Arial, sans-serif;line-height: 20px;padding: 0 15px 5px;">
-                                                Телефон:<a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/#id#" target="_blank" style="-webkit-text-size-adjust:none;font: 15px Arial, sans-serif;line-height: 20px;color: #000000;text-decoration: none;">#phone#</a>
+                                                Телефон:<a href="http://sanginov93.tophotels.site/project1/web/admin/request/view/<?=$model->id;?>" target="_blank" style="-webkit-text-size-adjust:none;font: 15px Arial, sans-serif;line-height: 20px;color: #000000;text-decoration: none;"><?=$model->phone;?></a>
                                             </td>
                                         </tr>
                                         </tbody>

@@ -33,7 +33,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'phone:ntext',
             'mail:ntext',
             'desc:ntext',
-            ['attribute'=>'status', 'value'=>function($model){ return $model->status0->name;}],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

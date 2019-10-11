@@ -2,7 +2,6 @@
 
 namespace app\controllers\admin;
 
-use app\models\HelperStatus;
 use Yii;
 use app\models\Request;
 use app\models\RequestSearch;
@@ -96,10 +95,8 @@ class RequestController extends Controller
         }
 
 
-        //var_dump(ArrayHelper::map(HelperStatus::find()->all(), 'id','name')); die;
         return $this->render('create', [
             'model' => $model,
-            'statusOptions' => ArrayHelper::map(HelperStatus::find()->all(),'id','name')
         ]);
     }
 
@@ -120,7 +117,6 @@ class RequestController extends Controller
 
         return $this->render('update', [
             'model' => $model,
-            'statusOptions' => ArrayHelper::map(HelperStatus::findAll('id > 0'),'id','name')
 
         ]);
     }

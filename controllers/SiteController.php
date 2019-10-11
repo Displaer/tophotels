@@ -11,6 +11,9 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    /**
+     * @return array
+     */
     public function behaviors()
     {
         return [
@@ -34,6 +37,9 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * @return array
+     */
     public function actions()
     {
         return [
@@ -47,6 +53,9 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * Перенаправления на форму.
+     */
     public function actionIndex()
     {
         // Перенаправляем в другой контроллер
@@ -55,52 +64,31 @@ class SiteController extends Controller
         //return $this->render('index');
     }
 
+    /**
+     * @return $this|string
+     */
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return Yii::$app->getResponse()->redirect(['/admin/site/index']);
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return Yii::$app->getResponse()->redirect(['/admin/site/index']);
         }
         return $this->render('login', [
             'model' => $model,
         ]);
     }
 
+    /**
+     * @return $this
+     */
     public function actionLogout()
     {
         Yii::$app->user->logout();
 
-        return $this->goHome();
-    }
-
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
-
-    public function actionHello(){
-        return $this->render('hello');
-//        return 'Hello, world!';
-    }
-
-    public function actionHello2(){
-        return 'Hello, world2!';
+        return Yii::$app->getResponse()->redirect(['/site/login']);;
     }
 }

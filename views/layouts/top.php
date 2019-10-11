@@ -25,54 +25,21 @@ TopAsset::register($this);
 
     <base href="<?=Yii::$app->homeUrl;?>"/>
     <link rel="icon" href="i/favicon.png">
-    <!--<link href="css/_lsfw/reset-ls.css" rel="stylesheet">
-    <link href="css/_lsfw/atom.css" rel="stylesheet">
-    <link href="css/_lsfw/fonts.css" rel="stylesheet">
-    <link href="css/_lsfw/tabs.css" rel="stylesheet">
-    <link href="css/vendor/font-awesome-5.0/css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/vendor/sumoselect.css" rel="stylesheet">
-    <link href="css/vendor/th-sumoselect.css" rel="stylesheet">
-    <link href="css/vendor/magnific-popup.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/flags.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/lsfw-tour-filter.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/lsfw-form-direction.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/lsfw-date-widget.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/lsfw-adults-widget.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/lsfw-durability-widget.css" rel="stylesheet">
-    <link href="css/lib-ui-tour-filter/lsfw-price-widget.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/main-cnt.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/main.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/layouts/header.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/layouts/header-mobile.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/layouts/footer.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/layouts/left-menu.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/layouts/left-menu-mobile.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/agree-pp.css" rel="stylesheet">
-    <link href="css/tophotels_site_html/tabs-bar-mobile.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet">
-    --><!--<script src="js/jquery.311.min.js"></script>-->
-
-
-
     <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
-
 <div class="page">
     <div class="headerMobile">
-
         <div class="headerMobile__flex js-serach-active-hide">
             <a href="http://sanginov93.tophotels.site/project1/web/" class="headerMobile__logo">
                 <img src="i/th-logo.png" width="112" height="40" class="mr10">
             </a>
-
             <div class="headerMobile__right">
                 <div class="headerMobile__right-auth">
                     <i class="far fa-envelope"></i>
                     <a href="#" class="headerMobile__msg-icon "><span>989</span></a>
                 </div>
-
                 <div class="headerMobile__right-noAuth" style="display: none">
                     1 507 753 участников
                 </div>
@@ -165,15 +132,12 @@ TopAsset::register($this);
                 </div>
 
                 <div class="panel" id="registrationPanel" style="">
-
                     <div class="headerMobile__registration-line">
                         <div class="bth__inp-block ">
                             <input type="text" class="bth__inp  js-input-label" id="regName">
                             <label for="regName" class="bth__inp-lbl ">Имя</label>
                         </div>
                     </div>
-
-
                     <div class="headerMobile__registration-line mt15">
                         <div class="rbt-block d-ib mr20">
                             <input type="radio" name="male" class="rbt" id="male1">
@@ -203,8 +167,6 @@ TopAsset::register($this);
                             <i class="headerMobile__registration-eye js-open-eye"></i>
                         </div>
                     </div>
-
-
                     <div class="headerMobile__registration-line">
                         <div class="bth__inp-block ">
                             <input type="password" class="bth__inp  js-input-label" id="regPassNewRep">
@@ -212,8 +174,6 @@ TopAsset::register($this);
                             <i class="headerMobile__registration-eye js-open-eye"></i>
                         </div>
                     </div>
-
-
                     <div class="relative">
                         <button class="bth__btn bth__btn--fill jsRegStep2 ">Продолжить*</button>
                         <div class="headerMobile__registration-text-abs">
@@ -224,18 +184,10 @@ TopAsset::register($this);
                     </div>
 
                 </div>
-
-
             </div>
-
         </div>
-
-
-
     </div>
-
     <header class="header">
-
         <div class="header-cnt header-cnt_index ">
             <a href="http://sanginov93.tophotels.site/project1/web/" class="header-logo">
                 <img src="i/th-logo.png" alt="">
@@ -260,8 +212,6 @@ TopAsset::register($this);
                         <li class="header-nav-item">
                             <a _href="http://sanginov93.tophotels.site/project1/web/review" class="header-nav-link  grey">Добавить отзыв</a>
                         </li>
-
-
                     </ul>
                     <ul class="header-nav-list show-1023">
 
@@ -362,7 +312,6 @@ TopAsset::register($this);
                 </div>
             </div>
 
-
         </div>
 
 
@@ -382,34 +331,7 @@ TopAsset::register($this);
             </div>
         </div>
     </footer>    <!--    -->
-
-
 </div>
-
-<!--<script src="js/jquery-ui.min.js"></script>
-<script src="js/vendor/magnific-popup.min.js"></script>
-<script src="js/vendor/SumoSelectLS/js/jquery.sumoselect-ls.min.js"></script>
-<script src="js/vendor/jquery-datepicker-range.js"></script>
-<script src="js/tophotels_site_html/tk-form-v2/date-function.js"></script>
-<script src="js/tophotels_site_html/tk-form-v2/main.js"></script>
-<script src="js/tophotels_site_html/tk-form-v2/form-date.js"></script>
-<script src="js/tophotels_site_html/form-pp-universal.js"></script>
-<script src="js/tophotels_site_html/form-directions.js"></script>
-<script src="js/tophotels_site_html/main.js"></script>
-<script src="js/tophotels_site_html/help-selections.js"></script>
-<script src="js/tophotels_site_html/agree-pp.js"></script>
-<script src="js/tophotels_site_html/header-mobile.js"></script>
-<script src="js/tophotels_site_html/left-menu-mobile.js"></script>
-<script src="js/tophotels_site_html/legal-info-pp.js"></script>
-<script src="js/libs/array-function.js"></script>
-<script src="js/libs/date-function.js"></script>
-<script src="js/libs/number-function.js"></script>
-<script src="js/libs/string-function.js"></script>
-<script src="js/libs/debounce.js"></script>
-<script src="js/libs/reverseLocale.js"></script>
-<script src="js/libs/LSPager.js"></script>
-<script src="js/libs/LSSuggest.js"></script>
--->
 <?php $this->endBody() ?>
 </body>
 </html>

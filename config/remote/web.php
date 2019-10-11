@@ -6,7 +6,7 @@ $db = require __DIR__ . '/db.php';
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
-    'homeUrl' => '/yii-s/project1/web/',
+	'homeUrl' => '/project1/web/',
     'language' => 'ru-RU',
     'bootstrap' => ['log'],
     'aliases' => [
@@ -28,8 +28,6 @@ $config = [
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'baseUrl' => '/yii-s/project1/web', // localhost/yii2advance
-
             'cookieValidationKey' => 'TOhFXuG0VcF_OgGN8RF_yjkQ266lfxhe',
         ],
         'cache' => [
@@ -47,7 +45,7 @@ $config = [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails
-            'useFileTransport' => true,
+            'useFileTransport' => false,
 
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
@@ -68,8 +66,8 @@ $config = [
             ],
         ],
         'db' => $db,
-
-        'urlManager' => [
+        
+		'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
@@ -80,7 +78,6 @@ $config = [
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ],
         ],
-
     ],
     'params' => $params,
 ];

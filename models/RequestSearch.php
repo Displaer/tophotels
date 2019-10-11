@@ -17,7 +17,7 @@ class RequestSearch extends Request
     public function rules()
     {
         return [
-            [['id', 'status'], 'integer'],
+            [['id'], 'integer'],
             [['name', 'phone', 'mail', 'desc', 'created', 'direction'], 'safe'],
         ];
     }
@@ -61,8 +61,7 @@ class RequestSearch extends Request
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'id' => $this->id,
-            'status' => $this->status,
+            'id' => $this->id
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

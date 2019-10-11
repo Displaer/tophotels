@@ -13,21 +13,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'name')->textInput([]) ?>
 
-    <?= $form->field($model, 'phone')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'phone')->textInput([]) ?>
 
-    <?= $form->field($model, 'mail')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'mail')->textInput([]) ?>
 
-    <?= $form->field($model, 'desc')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'desc')->textarea(['rows' => 4]) ?>
 
-    <?= $form->field($model, 'created')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($model, 'status')->textInput() ?>
-
-    <?= $form->field($model, 'status')->dropDownList($statusOptions) ?>
-
-    <?= $form->field($model, 'direction')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'direction')->textarea(['rows' => 4]) ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

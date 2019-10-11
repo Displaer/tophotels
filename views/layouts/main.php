@@ -38,12 +38,11 @@ AppAsset::register($this);
         'items' => [
             ['label' => Yii::t('app','Dashboard'), 'url' => ['/admin/site']],
             ['label' => Yii::t('app','Request'), 'url' => ['/admin/request/index']],
-            ['label' => Yii::t('app','Status'), 'url' => ['/admin/helper-status/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => Yii::t('app','Login'), 'url' => ['/site/login']]
             ) : (
                 '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
+                . Html::beginForm(['/site/logout'], 'post',['style'=>'padding-top: 7px;padding-bottom: 7px;'])
                 . Html::submitButton(
                     Yii::t('app','Logout') . ' (' . Yii::$app->user->identity->username . ')',
                     ['class' => 'btn btn-link']

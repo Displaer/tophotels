@@ -6,11 +6,12 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    /**
+     * @return array
+     */
     public function behaviors()
     {
         return [
@@ -19,7 +20,7 @@ class SiteController extends Controller
                 /*'only' => ['logout'],*/
                 'rules' => [
                     [
-                        'actions' => ['index'],
+                        'actions' => [ 'index','logout'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -34,6 +35,9 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * @return array
+     */
     public function actions()
     {
         return [
@@ -47,57 +51,12 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * Дашборд.
+     * @return string
+     */
     public function actionIndex()
     {
         return $this->render('index');
-    }
-
-    public function actionLogin()
-    {
-        if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-    }
-
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
-    }
-
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
-
-    public function actionHello(){
-        return $this->render('hello');
-//        return 'Hello, world!';
-    }
-
-    public function actionHello2(){
-        return 'Hello, world2!';
     }
 }
